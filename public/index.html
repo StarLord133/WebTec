@@ -35,7 +35,7 @@
     <div class="container">
         <div class="login-form-container">
             <h1 class="text-center">Login</h1>
-            <form action="">
+            <form id="loginForm">
                 <div class="mb-3">
                     <label for="username" class="form-label">Usuario</label>
                     <input type="text" id="username" name="username" class="form-control"
@@ -49,18 +49,50 @@
                     <button type="submit" class="btn btn-primary">Iniciar sesión</button>
                 </div>
             </form>
+            <p class="text-center mt-3">Usuario: oswaldo <br> Contraseña: 1234</p>
         </div>
 
-        <div class="text-center mt-4">
-            <p class="text-muted small">Link al repositorio en github: <br>
-                <a href="https://github.com/StarLord133/WebTec.git"
-                    class="text-decoration-none">https://github.com/StarLord133/WebTec.git</a>
-            </p>
-        </div>
+        <form id="form-radio">
+            <div>
+                <input type='radio' name='opcion' id="inivtado">
+                <label for="inivtado">Invitado</label>
+            </div>
+            <div>
+                <input type='radio' name='opcion' id="inivtado">
+                <label for="inivtado">Ponente</label>
+            </div>
+            <div>
+                <input type='radio' name='opcion' id="inivtado">
+                <label for="inivtado">Socio</label>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="text-muted small">Link al repositorio en github: <br>
+                    <a href="https://github.com/StarLord133/WebTec.git"
+                        class="text-decoration-none">https://github.com/StarLord133/WebTec.git</a>
+                </p>
+            </div>
     </div>
+    <button id="btn-enviar" disabled>Enviar</button>
+    </form>
+
+    <form id="form-select">
+        <select name="pais" id="paises">
+            <option value="">- Selecciona un pais -</option>
+        </select>
+        <select name="region" id="regiones">
+            <option value="">- Selecciona una region -</option>
+        </select>
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms">Terminos y condiciones</label>
+
+        <input type="checkbox" name="email" id="email">
+        <label for="email">Recibir correos</label>
+        <button id="Finalizar" disabled>Finalizar</button>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
